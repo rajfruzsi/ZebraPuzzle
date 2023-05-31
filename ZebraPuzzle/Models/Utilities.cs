@@ -6,15 +6,11 @@ using System.Threading.Tasks;
 
 namespace ZebraPuzzle.Models
 {
-    internal class HelperFunctions
+    internal class Utilities
     {
-      
-   
-      
-
         public static List<Dictionary<string, string>> GenerateRandomSolution()
         {
-                Random random = new Random();
+            Random random = new Random();
             List<string> nation = new List<string> { "Norwegian", "Ukrainian", "Englishman", "Spaniard", "Japanese" };
             List<string> color = new List<string> { "Red", "Blue", "Yellow", "Ivory", "Green" };
             List<string> drink = new List<string> { "Tea", "Milk", "Coffe", "Orange juice", "Water" };
@@ -41,20 +37,5 @@ namespace ZebraPuzzle.Models
             }
             return solution;
         }
-    
-
-
-    public static int RandomInt(int min, int max)
-        {
-            var rnd = new Random();
-            return rnd.Next(min, max + 1);
-        }
-
-        public static int LastIndex<T>(T[] array)
-        {
-            return array.Length - 1;
-        }
-
-
     }
 }
